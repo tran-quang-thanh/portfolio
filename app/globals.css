@@ -16,6 +16,7 @@ body {
       #300341
     )
     rgb(var(--background-start-rgb));
+  font-size: larger;
 }
 
 @layer utilities {
@@ -25,13 +26,9 @@ body {
 }
 
 h1 {
-  font-size: 2.6em;
+  font-size: xx-large;
   font-weight: bold;
   word-spacing: 0.1em;
-}
-
-h2 {
-  font-size: 1.8em;
 }
 
 .color-text {
