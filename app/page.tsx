@@ -1,15 +1,7 @@
 "use client"
 import Image from "next/image";
-import { useState } from "react";
 
 export default function Home() {
-
-  const [showLoading, setShowLoading] = useState(true);
-
-  function onImageLoad() {
-    setShowLoading(false)
-  }
-
   return (
     <main className="flex min-h-screen flex-col justify-between p-24">
       <div className="grid md:grid-cols-3">
@@ -24,15 +16,13 @@ export default function Home() {
             alt="Home Logo"
             width={0}
             height={0}
-            onLoad={onImageLoad}
             style={{ width: "100%", height: "auto" }}
             objectFit="contain"
+            priority
           />
         </div>
       </div>
-      {
-        showLoading ? <></> :
-        <div>
+      <div>
           <h1>About me</h1>
           <br />
           <p>
@@ -46,7 +36,6 @@ export default function Home() {
             and others like <span className="color-text">Kotlin and Swift</span>
           </p>
         </div>
-      }
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <a
