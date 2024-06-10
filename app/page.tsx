@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import HomeSocial from "@/components/HomeSocial";
 import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
@@ -7,7 +6,7 @@ import { LiaLinkedinIn } from "react-icons/lia";
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col justify-between p-24">
+      <main className="flex min-h-screen flex-col justify-between py-24 px-12 md:px-24">
         <div className="grid md:grid-cols-3">
           <div className="col-span-2">
             <h1>I'M <strong className="color-text">TRAN QUANG THANH</strong></h1>
@@ -51,7 +50,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }
