@@ -42,10 +42,10 @@ export default function Home() {
           <p className="py-4">Feel free to <span className="color-text">connect</span> with me</p>
           <div className="flex space-x-8 place-content-center">
             <HomeSocial url="https://github.com/tran-quang-thanh">
-              <AiFillGithub style={{ width: "25", height: "25" }} />
+              <AiFillGithub />
             </HomeSocial>
             <HomeSocial url="https://www.linkedin.com/in/thanh-tran-492019179/">
-              <LiaLinkedinIn style={{ width: "25", height: "25" }} />
+              <LiaLinkedinIn />
             </HomeSocial>
           </div>
         </div>
