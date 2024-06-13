@@ -10,7 +10,7 @@ export default function About() {
           <div className="col-span-3 pr-8 pb-4">
             <p>
               My name is <span className="color-text">Tran Quang Thanh&nbsp;</span>
-              and I'm from <span className="color-text">Hanoi, Vietnam</span>
+              and I&apos;m from <span className="color-text">Hanoi, Vietnam</span>
             </p>
             <br />
             <p>

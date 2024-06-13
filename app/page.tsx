@@ -11,7 +11,7 @@ export default function Home() {
       <main className="flex min-h-screen flex-col justify-between py-24 px-12 md:px-24">
         <div className="grid md:grid-cols-3">
           <div className="col-span-2">
-            <h1>I'M <strong className="color-text">TRAN QUANG THANH</strong></h1>
+            <h1>I&apos;M <strong className="color-text">TRAN QUANG THANH</strong></h1>
             <br/>
             <span className="text-2xl font-bold">
               <Typewriter

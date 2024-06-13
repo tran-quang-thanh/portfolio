@@ -14,16 +14,16 @@ export default function ExperienceItem({ title, position, description, time, exp
           <div>{position}</div>
           <div className="text-gray-400">{description}</div>
           <div className="flex flex-wrap gap-2 px-2">
-            { experiences.map(e => <ExperienceCard description={e}/>) }
+            { experiences.map((e, index) => <ExperienceCard description={e} id={index}/>) }
           </div>
       </div>
     </div>
   )
 }
 
-function ExperienceCard({ description }: { description: string}) {
+function ExperienceCard({ description, id }: { description: string, id: number}) {
   return (
-    <div className="text-sm rounded-full bg-[#4d3058] p-2 text-[#eccff8]">
+    <div className="text-sm rounded-full bg-[#4d3058] p-2 text-[#eccff8]" id={id.toString()}>
       {description}
     </div>
   )
