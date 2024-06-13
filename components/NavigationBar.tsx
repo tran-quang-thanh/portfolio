@@ -1,9 +1,9 @@
 'use client'
 import Link from "next/link";
 import { ReactNode, useState } from "react";
-import { Nav, Navbar } from "react-bootstrap";
-import { AiOutlineFundProjectionScreen, AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { CgFileDocument } from "react-icons/cg";
+import { Button, Nav, Navbar } from "react-bootstrap";
+import { AiFillStar, AiOutlineFundProjectionScreen, AiOutlineHome, AiOutlineUser } from "react-icons/ai";
+import { CgFileDocument, CgGitFork } from "react-icons/cg";
 
 export default function NavigationBar() {
   const [isExpanded, updateExpanded] = useState(false);
@@ -75,6 +75,16 @@ export default function NavigationBar() {
 				</NavBarItem>
 
 			</Navbar.Collapse>
+
+			<Button 
+        href="https://github.com/tran-quang-thanh/portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center text-2xl space-x-1 px-8 py-2 bg-[#934cce5e] border-[#934cce5e] border-2 hover:bg-[#a24dd386] hover:border-[#a24dd386] hover:-translate-y-1 transition duration-500"
+      >
+          <CgGitFork />
+					<AiFillStar />
+      </Button>
 		</Navbar>
   );
 }
