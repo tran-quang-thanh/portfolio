@@ -1,7 +1,9 @@
+"use client"
 import HomeSocial from "@/components/HomeSocial";
 import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
 import { LiaLinkedinIn } from "react-icons/lia";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
@@ -11,7 +13,12 @@ export default function Home() {
           <div className="col-span-2">
             <h1>I'M <strong className="color-text">TRAN QUANG THANH</strong></h1>
             <br/>
-            <h1>Software Engineer</h1>
+            <span className="text-2xl font-bold">
+              <Typewriter
+                words={["Software Engineer", "Data Analyst", "Technology Enthusiast"]}
+                loop={0}
+              />
+            </span>
           </div>
           <div>
             <Image
