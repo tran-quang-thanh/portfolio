@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 import NavigationBar from "@/components/NavigationBar";
 import Footer from "@/components/Footer";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <link rel="icon" href="/avatar.svg" sizes="any" />
       <body className={inter.className}>
         <NavigationBar />
+        <ParticleBackground />
         {children}
         <Footer />
       </body>
