@@ -70,7 +70,7 @@ export default function Resume() {
       </div>
 
       <Button 
-        href="/resume-Tran-Quang-Thanh-1.pdf"
+        href="/resume-Tran-Quang-Thanh-public.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center space-x-2 bg-[#623686] border-[#623686] hover:bg-[#6d20c5d7] hover:border-[#6d20c5d7]"

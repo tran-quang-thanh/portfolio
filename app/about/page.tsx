@@ -29,7 +29,8 @@ export default function About() {
             </p>
             <ul className="list-disc pl-8">
               <li>Playing sports: Soccer, Tennis</li>
-              <li>Read books/newsletter</li>
+              <li>Reading books/newsletters</li>
+              <li>Playing video games</li>
             </ul>
           </div>
           <div className="col-span-3 md:col-span-1">
