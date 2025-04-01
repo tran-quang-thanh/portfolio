@@ -8,6 +8,39 @@ export default function Resume() {
       <h1>My experience</h1>
       <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
           <ExperienceItem
+            title="Singapore Management University"
+            position="Research Engineer"
+            description={
+              <div>
+                <div>Developed and tested system to collect sensor data using Raspberry Pi to track daily activities of elderly citizen</div>
+                <a 
+                  href="https://sites.google.com/smu.edu.sg/neural-and-cognitive-computing/projects/sinew" 
+                  className="text-white" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Reference
+                </a>
+              </div>
+            }
+            time="Feb 2025 &#45; present"
+            experiences={["Raspberry Pi", "Node-RED", "Python"]}
+          />
+          <ExperienceItem
+            title="Hakko Products Pte Ltd"
+            position="Business Intelligence"
+            description={
+              <div>
+                <ul>
+                  <li>Supported in BC platform migration</li>
+                  <li>Analyzed and prepared business data</li>
+                </ul>
+              </div>
+            }
+            time="Aug 2024 &#45; Dec 2024"
+            experiences={["Python", "Excel", "Power Query"]}
+          />
+          <ExperienceItem
             title="Tempest"
             position="Software Engineer"
             description={
